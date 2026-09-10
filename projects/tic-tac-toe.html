@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe (React) — Jacquez Monroe</title>
+  <meta name="description" content="A React + Vite rebuild of tic-tac-toe with an unbeatable minimax AI and selectable difficulty." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="../index.html" class="nav-link">home</a>
+        <a href="../about.html" class="nav-link">about</a>
+        <a href="../projects.html" class="nav-link">projects</a>
+        <a href="../contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 48px;">
+      <div class="container">
+
+        <a href="../projects.html" class="back-link">&larr; back to projects</a>
+
+        <div class="detail-header">
+          <span class="eyebrow">react &middot; vite</span>
+          <h1>Tic-Tac-Toe (React)</h1>
+          <p>A React + Vite rebuild of the classic game, with an unbeatable minimax AI and selectable difficulty.</p>
+        </div>
+
+        <div class="btn-row">
+          <a href="https://tic-tac-toe-react-sand-ten.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener external">Live Demo</a>
+          <a href="https://github.com/8fn4wf8phr-ops/tic-tac-toe-react" class="btn btn-secondary" target="_blank" rel="noopener external">GitHub</a>
+        </div>
+
+        <div class="detail-preview hud-corners">[ preview ]</div>
+
+        <div class="detail-layout">
+          <div class="detail-main">
+
+            <h2>Overview</h2>
+            <p>A rebuild of the classic tic-tac-toe game using React and Vite. It supports both 2-player local play and a single-player mode against an AI opponent, with a clean interface, move history, and full keyboard support.</p>
+
+            <h2>Challenges</h2>
+            <p>The unbeatable AI mode uses a minimax algorithm, requiring game-tree evaluation rather than simple conditionals — the AI has to look ahead through possible move sequences to always play optimally. Getting selectable difficulty right was the harder part: making the AI deliberately imperfect on easier settings without it feeling random took real tuning, balancing how often it "misses" a winning move against how predictable that made it feel.</p>
+
+            <h2>Features</h2>
+            <ul>
+              <li>2-player and single-player (vs. AI) modes</li>
+              <li>Unbeatable AI powered by minimax game-tree search</li>
+              <li>Selectable AI difficulty levels</li>
+              <li>Full move history with the ability to step back through a game</li>
+              <li>Keyboard controls for accessible play</li>
+              <li>Dark mode</li>
+            </ul>
+
+          </div>
+
+          <aside class="detail-sidebar">
+            <h3>Tech stack</h3>
+            <ul class="stack-list">
+              <li><span class="stack-label">Framework</span><span class="stack-value">React</span></li>
+              <li><span class="stack-label">Build tool</span><span class="stack-value">Vite</span></li>
+              <li><span class="stack-label">Logic</span><span class="stack-value">Minimax AI</span></li>
+              <li><span class="stack-label">Hosting</span><span class="stack-value">Vercel</span></li>
+            </ul>
+            <a href="https://tic-tac-toe-react-sand-ten.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener external">Live Demo</a>
+            <a href="https://github.com/8fn4wf8phr-ops/tic-tac-toe-react" class="btn btn-secondary" target="_blank" rel="noopener external">GitHub</a>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
