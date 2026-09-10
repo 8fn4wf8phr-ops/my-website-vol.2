@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacquez Monroe — Web Developer</title>
+  <meta name="description" content="Jacquez Monroe is a web developer building clean, usable websites and web apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link">home</a>
+        <a href="about.html" class="nav-link">about</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hud-grid">
+      <div class="container">
+        <span class="eyebrow">web developer</span>
+        <h1 class="hero-headline">I build clean, fast, and usable things for the web.</h1>
+        <p class="hero-role">Jacquez Monroe</p>
+        <p class="hero-tagline">Front to back — interface, interaction, and the small performance details most visitors never notice but always feel.</p>
+        <div class="btn-row">
+          <a href="projects.html" class="btn btn-primary">View work</a>
+          <a href="assets/resume.pdf" class="btn btn-secondary" download>Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Recent builds</h2>
+        <p class="section-subtitle">A few things I've shipped recently — click through for the full breakdown of each build.</p>
+
+        <div class="card-grid">
+
+          <article class="card hud-corners">
+            <div class="card-preview">[ preview ]</div>
+            <div class="card-title-row">
+              <h3>Tic-Tac-Toe (React)</h3>
+            </div>
+            <p>A React + Vite rebuild of the classic game with an unbeatable AI, selectable difficulty, and move history.</p>
+            <div class="tags">
+              <span class="tag featured">Featured</span>
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+            </div>
+            <a href="projects/tic-tac-toe.html" class="card-link">View details</a>
+          </article>
+
+          <article class="card hud-corners">
+            <div class="card-preview">[ preview ]</div>
+            <div class="card-title-row">
+              <h3>Calculator</h3>
+            </div>
+            <p>A scientific calculator with a unit converter, searchable history, CSV export, and offline PWA support.</p>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">PWA</span>
+            </div>
+            <a href="projects/calculator.html" class="card-link">View details</a>
+          </article>
+
+          <article class="card hud-corners">
+            <div class="card-preview">[ preview ]</div>
+            <div class="card-title-row">
+              <h3>Weather App</h3>
+            </div>
+            <p>Live city search with autocomplete, geolocation lookup, current conditions, and a 5-day forecast.</p>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="projects/weather.html" class="card-link">View details</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
