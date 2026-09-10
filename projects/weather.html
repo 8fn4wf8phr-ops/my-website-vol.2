@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App — Jacquez Monroe</title>
+  <meta name="description" content="A weather app with live city search, autocomplete, geolocation, and a 5-day forecast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="../index.html" class="nav-link">home</a>
+        <a href="../about.html" class="nav-link">about</a>
+        <a href="../projects.html" class="nav-link">projects</a>
+        <a href="../contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 48px;">
+      <div class="container">
+
+        <a href="../projects.html" class="back-link">&larr; back to projects</a>
+
+        <div class="detail-header">
+          <span class="eyebrow">javascript &middot; api</span>
+          <h1>Weather App</h1>
+          <p>Live city search with autocomplete, geolocation lookup, current conditions, and a 5-day forecast.</p>
+        </div>
+
+        <div class="btn-row">
+          <a href="https://weather-app-orcin-one.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener external">Live Demo</a>
+          <a href="https://github.com/8fn4wf8phr-ops/weather-app" class="btn btn-secondary" target="_blank" rel="noopener external">GitHub</a>
+        </div>
+
+        <div class="detail-preview hud-corners">[ preview ]</div>
+
+        <div class="detail-layout">
+          <div class="detail-main">
+
+            <h2>Overview</h2>
+            <p>A weather app that surfaces current conditions and a 5-day forecast for any city, with live search-as-you-type autocomplete and a one-tap geolocation lookup for wherever you are. It's powered by a free weather API that requires no API key to use.</p>
+
+            <h2>Challenges</h2>
+            <p>Autocomplete search needed debouncing so it wasn't firing an API call on every keystroke — waiting for a short pause in typing before querying kept the app responsive without hammering the API. Handling ambiguous city names, which are often shared across multiple countries, meant surfacing enough context (country, region) in the suggestion list for people to confidently pick the right one.</p>
+
+            <h2>Features</h2>
+            <ul>
+              <li>Live city search with debounced autocomplete</li>
+              <li>Geolocation-based lookup</li>
+              <li>Current conditions at a glance</li>
+              <li>5-day forecast</li>
+              <li>Disambiguation for cities sharing a name</li>
+              <li>No API key required</li>
+            </ul>
+
+          </div>
+
+          <aside class="detail-sidebar">
+            <h3>Tech stack</h3>
+            <ul class="stack-list">
+              <li><span class="stack-label">Core</span><span class="stack-value">JavaScript</span></li>
+              <li><span class="stack-label">Data</span><span class="stack-value">Weather API</span></li>
+              <li><span class="stack-label">Pattern</span><span class="stack-value">Debounced search</span></li>
+              <li><span class="stack-label">Hosting</span><span class="stack-value">Vercel</span></li>
+            </ul>
+            <a href="https://weather-app-orcin-one.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener external">Live Demo</a>
+            <a href="https://github.com/8fn4wf8phr-ops/weather-app" class="btn btn-secondary" target="_blank" rel="noopener external">GitHub</a>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
