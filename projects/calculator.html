@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator — Jacquez Monroe</title>
+  <meta name="description" content="A scientific calculator PWA with a unit converter and searchable calculation history." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="../index.html" class="nav-link">home</a>
+        <a href="../about.html" class="nav-link">about</a>
+        <a href="../projects.html" class="nav-link">projects</a>
+        <a href="../contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 48px;">
+      <div class="container">
+
+        <a href="../projects.html" class="back-link">&larr; back to projects</a>
+
+        <div class="detail-header">
+          <span class="eyebrow">javascript &middot; pwa</span>
+          <h1>Calculator</h1>
+          <p>A calculator with a scientific mode, unit converter, and searchable calculation history — installable as an offline-capable PWA.</p>
+        </div>
+
+        <div class="btn-row">
+          <a href="https://calculator-app-three-sand.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener external">Live Demo</a>
+          <a href="https://github.com/8fn4wf8phr-ops/calculator-app" class="btn btn-secondary" target="_blank" rel="noopener external">GitHub</a>
+        </div>
+
+        <div class="detail-preview hud-corners">[ preview ]</div>
+
+        <div class="detail-layout">
+          <div class="detail-main">
+
+            <h2>Overview</h2>
+            <p>A calculator app that goes beyond basic arithmetic — it includes a scientific mode, a built-in unit converter, and a searchable history of past calculations that can be exported to CSV. It's built to be installed as a Progressive Web App and used fully offline.</p>
+
+            <h2>Challenges</h2>
+            <p>Keeping scientific and standard modes on one shared expression-parsing engine, rather than two bolted-together calculators, meant designing the parser to handle both simple arithmetic and more complex scientific functions through the same code path. Making it installable as a PWA also meant handling offline caching properly for a tool that, by nature, shouldn't need network access at all to function.</p>
+
+            <h2>Features</h2>
+            <ul>
+              <li>Standard and scientific calculator modes</li>
+              <li>Built-in unit converter</li>
+              <li>Calculation history with search</li>
+              <li>CSV export of calculation history</li>
+              <li>Installable, offline-capable PWA</li>
+              <li>Local storage persistence between sessions</li>
+            </ul>
+
+          </div>
+
+          <aside class="detail-sidebar">
+            <h3>Tech stack</h3>
+            <ul class="stack-list">
+              <li><span class="stack-label">Core</span><span class="stack-value">JavaScript</span></li>
+              <li><span class="stack-label">Type</span><span class="stack-value">PWA</span></li>
+              <li><span class="stack-label">Storage</span><span class="stack-value">LocalStorage</span></li>
+              <li><span class="stack-label">Hosting</span><span class="stack-value">Vercel</span></li>
+            </ul>
+            <a href="https://calculator-app-three-sand.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener external">Live Demo</a>
+            <a href="https://github.com/8fn4wf8phr-ops/calculator-app" class="btn btn-secondary" target="_blank" rel="noopener external">GitHub</a>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
