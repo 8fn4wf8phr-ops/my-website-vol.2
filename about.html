@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Jacquez Monroe</title>
+  <meta name="description" content="About Jacquez Monroe, a web developer focused on building clean, usable websites and web apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link">home</a>
+        <a href="about.html" class="nav-link">about</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header hud-grid">
+      <div class="container">
+        <span class="eyebrow">about</span>
+        <h1>A bit about how I work.</h1>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="section">
+      <div class="container">
+        <div class="bio">
+          <p>I'm a web developer focused on building clean, usable websites and web apps. I enjoy working across the stack — from styling the smallest details in CSS to wiring up the logic that makes a site actually work.</p>
+          <p>This portfolio is itself one of my projects: built from scratch, twice — first as a warm, minimal single-page site, and now as this multi-page version with its own design system. I like projects that let me touch the whole stack: interface, interaction, and the small performance and accessibility details that most visitors never notice but always feel.</p>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 3em;">Skills &amp; tools</h2>
+        <div class="skill-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Vite</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">PWA</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
