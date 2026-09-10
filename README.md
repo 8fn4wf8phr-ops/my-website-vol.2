@@ -6,7 +6,30 @@ This is a second, separate version of an existing portfolio: the first was a war
 
 ## Live site
 
-_(add your GitHub Pages URL here once enabled — see below)_
+**[my-website-vol-2.vercel.app](https://my-website-vol-2.vercel.app)**
+
+## The journey
+
+**1. The brief.** The starting point was a design brief for a "pure futuristic" portfolio: navy/near-black backgrounds, electric blue for structure, and yellow reserved as a single signal color — never decorative, only for primary CTAs, the active nav item, and featured tags. Multi-page, not a single scroller: home, about, projects, contact, plus a dedicated detail page per project.
+
+**2. Design system first.** Before any page markup, the CSS variables, type stack (Space Grotesk for headings, IBM Plex Mono for nav/data, system sans for body), and the signature details went in first — the dot-grid hero background, HUD-style corner brackets, the one-time scan-line sweep on primary-button hover, the pulsing status dot, and the sticky/blurred header. Building the system before the pages meant every page after this point was just assembly.
+
+**3. Shared behavior.** One `script.js` handles everything every page needs: the first-visit boot splash (typed line by line, `sessionStorage`-gated so it doesn't replay on navigation), the live header clock, active-nav highlighting, the mobile hamburger menu, and the ~200ms page-fade on internal link clicks.
+
+**4. The pages.** Home, about, projects, and contact went in next, followed by the three project detail pages (Tic-Tac-Toe, Calculator, Weather App) — each with an overview, a real technical challenge and how it was approached, a feature list, and a sidebar with the tech stack and links.
+
+**5. Shipping it.** The repo went up on GitHub with the build broken into logical commits (scaffold → design system → behavior → each page → each project detail page), then connected to Vercel for auto-deploy on every push to `main`.
+
+**6. Real content.** The initial build used a placeholder resume PDF and `[ preview ]` boxes where screenshots would go — deliberately, so they'd be easy to swap out. Once the real resume and actual app screenshots (Tic-Tac-Toe, Calculator, Weather App) were ready, they replaced the placeholders in the same commit-per-change pattern.
+
+The full history of that progression — every step above as its own commit — is in this repo's [commit log](../../commits/main).
+
+## Preview
+
+| | | |
+|---|---|---|
+| ![Tic-Tac-Toe app](assets/previews/tic-tac-toe.png) | ![Calculator app](assets/previews/calculator.png) | ![Weather app](assets/previews/weather.png) |
+| Tic-Tac-Toe (React) | Calculator | Weather App |
 
 ## Design system
 
@@ -32,7 +55,8 @@ css/style.css            Shared design system and layout
 js/script.js              Shared behavior: splash sequence, header clock,
                            active-nav highlighting, mobile menu, page-fade
                            transitions
-assets/resume.pdf         Placeholder — swap with the real resume
+assets/resume.pdf         Downloadable resume
+assets/previews/          Real screenshots used on project cards/details
 ```
 
 Every page shares the same sticky header (logo, nav, live clock, mobile hamburger) and footer (copyright + status line), duplicated per page since there's no build tool to share partials.
@@ -49,4 +73,4 @@ Then open `http://localhost:4173`.
 
 ## Deploying
 
-This is static output, so it deploys as-is to GitHub Pages, Vercel, Netlify, or any static host. For GitHub Pages: push to a repo, then in **Settings → Pages** set the source to the `main` branch, root folder.
+This is static output, so it deploys as-is to Vercel, Netlify, GitHub Pages, or any static host. This project is deployed on Vercel, connected directly to this GitHub repo — every push to `main` auto-deploys.
