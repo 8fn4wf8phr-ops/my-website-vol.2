@@ -747,13 +747,20 @@ input:focus-visible {
   padding: 100px 0 120px;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-top: 0.75em;
+}
+
 .contact-email {
   display: inline-block;
   font-family: var(--font-heading);
   font-size: clamp(1.4rem, 5vw, 2.4rem);
   font-weight: 700;
   color: var(--yellow);
-  margin-top: 0.75em;
   border-bottom: 2px solid var(--yellow);
   padding-bottom: 4px;
   word-break: break-word;
@@ -762,6 +769,22 @@ input:focus-visible {
 .contact-email:hover {
   text-decoration: none;
   opacity: 0.85;
+}
+
+.contact-github {
+  display: inline-block;
+  font-family: var(--font-mono, var(--font-heading));
+  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+  font-weight: 500;
+  color: var(--text, inherit);
+  border-bottom: 1px solid var(--border, currentColor);
+  padding-bottom: 2px;
+  opacity: 0.8;
+}
+
+.contact-github:hover {
+  border-bottom-color: var(--yellow);
+  opacity: 1;
 }
 
 /* ==========================================================================
