@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tally — Case Study — Jacquez Monroe</title>
+  <meta name="description" content="How Tally, a privacy-first native iOS reminder app, was built with Capacitor wrapping a vanilla HTML/CSS/JS app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../../index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="../../index.html" class="nav-link">home</a>
+        <a href="../../about.html" class="nav-link">about</a>
+        <a href="../../projects.html" class="nav-link">projects</a>
+        <a href="/case-studies" class="nav-link">case studies</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 48px;">
+      <div class="container">
+
+        <section class="case-study">
+          <a href="/case-studies" class="back-link">← All Case Studies</a>
+
+          <header class="case-study-header">
+            <h1>Tally</h1>
+            <p class="case-study-tagline">A privacy-first native iOS app for reminders to take medication or stick to a daily routine — no accounts, no cloud sync, nothing leaves the device.</p>
+            <div class="tech-tags">
+              <span class="tag">Capacitor</span>
+              <span class="tag">Vite</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Vanilla JS</span>
+            </div>
+          </header>
+
+          <div class="case-study-body">
+            <section>
+              <h2>Overview</h2>
+              <p>Tally is a native iOS app for reminders to take medication or stick to a daily routine — no accounts, no cloud sync, nothing leaves the device. Built with Capacitor wrapping a vanilla HTML/CSS/JS app.</p>
+            </section>
+
+            <section>
+              <h2>The Challenge</h2>
+              <p>Most reminder apps require an account before adding a single reminder, which felt wrong for health-adjacent data. The bar was: simple, offline, private. Scope had to stay narrow — add/edit/delete a reminder, local notification, mark it taken — resisting the urge to add dosage tracking, history, or streaks in v1.</p>
+            </section>
+
+            <section>
+              <h2>The Approach</h2>
+              <p>Chose Capacitor over learning React Native, since it let existing HTML/CSS/JS skills wrap into a real native app. Kept state simple — a "taken" status is just a stored date string compared to today, resetting automatically with no scheduled job. Built and smoke-tested the whole app in-browser before touching Xcode. Went from web app to native via Vite bundling, <code>npx cap add ios</code>, and building/signing from Xcode directly on a local machine. Refined visuals with an electric-teal accent, animated title mark, glow-and-press button effects, and a bouncy check-off animation.</p>
+            </section>
+
+            <section>
+              <h2>The Result</h2>
+              <p>Runs successfully in the iOS Simulator via Xcode — a working native, privacy-first app ready for real-device testing and eventual App Store submission.</p>
+            </section>
+
+            <section>
+              <h2>What I'd Change Next</h2>
+              <ul>
+                <li>Test on a real phone</li>
+                <li>Design an app icon and launch screen</li>
+                <li>Polish the notification permission flow</li>
+                <li>Consider multiple reminder times per day</li>
+                <li>Add a weekly view</li>
+                <li>Add a streak feature with a grace period</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="case-study-links">
+            <a href="https://github.com/8fn4wf8phr-ops/Tally" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <span class="btn btn-primary btn-disabled" aria-disabled="true">App Store — Coming Soon</span>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+</html>

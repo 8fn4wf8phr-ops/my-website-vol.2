@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Jacquez Monroe</title>
+  <meta name="description" content="Deeper dives into how Jacquez Monroe built Tally and the Tic-Tac-Toe React rebuild — the decisions, the challenges, and what's next." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="../index.html" class="nav-link">home</a>
+        <a href="../about.html" class="nav-link">about</a>
+        <a href="../projects.html" class="nav-link">projects</a>
+        <a href="/case-studies" class="nav-link">case studies</a>
+        <a href="../contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header hud-grid">
+      <div class="container">
+        <span class="eyebrow">case studies</span>
+        <h1>The story behind the builds.</h1>
+        <p>Deeper dives into two projects — what I set out to build, the decisions I made along the way, and what I'd change next.</p>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="section">
+      <div class="container">
+        <div class="case-study-grid">
+
+          <a href="/case-studies/tally" class="case-study-card hud-corners">
+            <h3>Tally</h3>
+            <p>A native iOS reminder app for medication and daily routines — no accounts, no cloud sync, nothing leaves the device.</p>
+            <span class="read-more">Read the full story →</span>
+          </a>
+
+          <a href="/case-studies/tic-tac-toe-react" class="case-study-card hud-corners">
+            <h3>Tic-Tac-Toe (React)</h3>
+            <p>Rebuilding a vanilla JS game in React to learn React itself — and shipping something far more polished than planned.</p>
+            <span class="read-more">Read the full story →</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

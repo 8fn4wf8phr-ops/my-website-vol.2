@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe React — Case Study — Jacquez Monroe</title>
+  <meta name="description" content="How a vanilla JS Tic-Tac-Toe game was rebuilt in React 19 to learn React itself, then shipped well past the original scope." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../../index.html" class="logo">JACQUEZ<span class="accent">.</span>MONROE</a>
+      <nav class="nav" id="mainNav">
+        <a href="../../index.html" class="nav-link">home</a>
+        <a href="../../about.html" class="nav-link">about</a>
+        <a href="../../projects.html" class="nav-link">projects</a>
+        <a href="/case-studies" class="nav-link">case studies</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="local-time" id="localTime">--:--:--</span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 48px;">
+      <div class="container">
+
+        <section class="case-study">
+          <a href="/case-studies" class="back-link">← All Case Studies</a>
+
+          <header class="case-study-header">
+            <h1>Tic-Tac-Toe (React)</h1>
+            <p class="case-study-tagline">A React rebuild of an earlier vanilla-JS Tic-Tac-Toe game, built specifically to learn React hands-on after asking "what is React."</p>
+            <div class="tech-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Vercel</span>
+            </div>
+          </header>
+
+          <div class="case-study-body">
+            <section>
+              <h2>Overview</h2>
+              <p>A React rebuild of an earlier vanilla-JS Tic-Tac-Toe game, built specifically to learn React hands-on after asking "what is React."</p>
+            </section>
+
+            <section>
+              <h2>The Challenge</h2>
+              <p>Going from a vanilla JS implementation to React meant re-thinking the same game (2-player + unbeatable minimax AI, dark mode) through components and state, while also setting up a full toolchain (Node.js, Vite, Git, GitHub, Vercel deploys) for the first time.</p>
+            </section>
+
+            <section>
+              <h2>The Approach</h2>
+              <p>Scaffolded with Vite and React 19, installed Node.js from scratch, and rebuilt the game with the classic React tutorial feature of a move-history/time-travel list. After the initial rebuild, expanded well past parity with the original: fill/win animations, sound effects with a mute toggle, win confetti, full keyboard support (arrow keys, Enter, number keys 1-9), selectable AI difficulty levels, a rematch button that alternates who moves first, an undo button, and Open Graph meta tags for link previews. Connected the GitHub repo to Vercel for automatic redeploys on push.</p>
+            </section>
+
+            <section>
+              <h2>The Result</h2>
+              <p>A fully-featured, polished React app live on Vercel with analytics enabled, going well beyond the original scope as a genuine learning-to-shipping project.</p>
+            </section>
+
+            <section>
+              <h2>What I'd Change Next</h2>
+              <ul>
+                <li>Online multiplayer mode</li>
+                <li>A larger board size variant</li>
+              </ul>
+              <p>That said, the project already serves its purpose as a complete React learning exercise.</p>
+            </section>
+          </div>
+
+          <div class="case-study-links">
+            <a href="https://github.com/8fn4wf8phr-ops/tic-tac-toe-react" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="https://tic-tac-toe-react-sand-ten.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> Jacquez Monroe</p>
+      <p class="footer-status"><span class="status-dot"></span> &gt; status: available for work</p>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+</html>

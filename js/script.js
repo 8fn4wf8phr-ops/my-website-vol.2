@@ -9,17 +9,22 @@
   function setActiveNav() {
     var links = document.querySelectorAll('.nav-link');
     var path = location.pathname.toLowerCase();
+    var inProjectDetail = path.indexOf('/projects/') !== -1;
+    var inCaseStudies = path === '/case-studies' || path.indexOf('/case-studies/') !== -1;
+
     var current = (path.split('/').pop() || 'index.html');
     if (current === '') current = 'index.html';
-    var inProjectDetail = path.indexOf('/projects/') !== -1;
 
     links.forEach(function (link) {
       var href = link.getAttribute('href') || '';
       var hrefFile = href.split('/').pop().toLowerCase();
-      var isMatch = hrefFile === current;
-      var isProjectsWhileInDetail = inProjectDetail && hrefFile === 'projects.html';
+      var isCaseStudiesLink = href.replace(/\/$/, '').toLowerCase() === '/case-studies';
 
-      if (isMatch || isProjectsWhileInDetail) {
+      var isMatch = !inProjectDetail && !inCaseStudies && hrefFile === current;
+      var isProjectsWhileInDetail = inProjectDetail && hrefFile === 'projects.html';
+      var isCaseStudiesWhileInSection = inCaseStudies && isCaseStudiesLink;
+
+      if (isMatch || isProjectsWhileInDetail || isCaseStudiesWhileInSection) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
       } else {
