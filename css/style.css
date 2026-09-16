@@ -586,8 +586,7 @@ input:focus-visible {
 
 .project-card-full .card-preview {
   margin-bottom: 0;
-  height: 100%;
-  min-height: 160px;
+  align-self: start;
 }
 
 .project-card-full .card-body {
