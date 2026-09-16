@@ -536,6 +536,25 @@ input:focus-visible {
   font-weight: 600;
 }
 
+.lighthouse-scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+.score-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  padding: 4px 9px 4px 8px;
+  border-radius: 3px;
+  background: rgba(76, 175, 80, 0.1);
+  color: #7FE08A;
+  border-left: 3px solid #4CAF50;
+  font-weight: 600;
+}
+
 .card-link {
   font-family: var(--font-mono);
   font-size: 0.82rem;
